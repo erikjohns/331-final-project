@@ -1,2 +1,3 @@
-# 331-final-project
-Final Project for CSCI 331 - Spotify Top Songs / Artists Tracker
+# CSCI 331: Web Development - Final Project
+#### Group Members: Erik Johns, Aidan Pendergast, and Andrew Turenne 
+#### Topic: Spotify Top Songs / Artists Tracker
