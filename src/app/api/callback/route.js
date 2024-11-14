@@ -1,10 +1,19 @@
 import axios from 'axios';
 import queryString from 'query-string';
 
+/**
+ * GET route handler for handling Spotify's OAuth callback
+ * This route exchanges the authorization code for an access token and a refresh token
+ *
+ * @param {Request} req - The incoming request object containing the authorization code
+ * @returns {Response} - A redirect response to the dashboard page with the access token
+ */
 export async function GET(req) {
+    // Extract the authorization code from the query parameters in the request URL
     const { searchParams } = new URL(req.url);
     const code = searchParams.get('code');
 
+    // Prepare the options for the token request to Spotify
     const authOptions = {
         method: 'POST',
         url: 'https://accounts.spotify.com/api/token',
@@ -24,6 +33,7 @@ export async function GET(req) {
     const response = await axios(authOptions);
     const { access_token, refresh_token } = response.data;
 
+    // Redirect the user to the dashboard with the tokens as query parameters
     return new Response(null, {
         status: 302,
         headers: {
