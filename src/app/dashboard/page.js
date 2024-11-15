@@ -4,6 +4,7 @@ import { useSpotifyData } from '@/hooks/useSpotifyData';
 import { useSpotify } from '@/context/SpotifyContext';
 import { useSearchParams } from 'next/navigation';
 import { setAccessToken as setSpotifyAccessToken } from '@/services/spotify';
+import '@/styles/dashboard.css';
 
 export default function Dashboard() {
     const searchParams = useSearchParams();
@@ -21,16 +22,18 @@ export default function Dashboard() {
     }, [searchParams, accessToken, updateAccessToken]);
 
     return (
-        <div>
+        <div className={'dashboard-container'}>
             <h1>Your Spotify Stats</h1>
-
             <h2>Top Artists</h2>
             {topArtists.length > 0 ? (
-                <ul>
-                    {topArtists.map((artist) => (
-                        <li key={artist.id}>
-                            <img src={artist.images[0]?.url} alt={artist.name} width={50} height={50} />
-                            {artist.name}
+                <ul className={'top-artists'}>
+                    {topArtists.map((artist, index) => (
+                        <li key={index}>
+                            <h3>{index + 1}</h3>
+                            <img src={artist.images[0]?.url} alt={artist.name} />
+                            <div>
+                                <h3>{artist.name}</h3>
+                            </div>
                         </li>
                     ))}
                 </ul>
@@ -40,9 +43,12 @@ export default function Dashboard() {
 
             <h2>Top Tracks</h2>
             {topTracks.length > 0 ? (
-                <ul>
-                    {topTracks.map((track) => (
-                        <li key={track.id}>{track.name}</li>
+                <ul className={'top-tracks'}>
+                    {topTracks.map((track, index) => (
+                        <li key={track.id}>
+                            <img src={track.album.images[0]?.url} alt={track.name} />
+                            <h5>{index + 1}. {track.name}</h5>
+                        </li>
                     ))}
                 </ul>
             ) : (
@@ -51,9 +57,12 @@ export default function Dashboard() {
 
             <h2>Recently Played Tracks</h2>
             {recentTracks.length > 0 ? (
-                <ul>
+                <ul className={'recent-tracks'}>
                     {recentTracks.map((item, index) => (
-                        <li key={index}>{item.track.name}</li>
+                        <li key={index}>
+                            <img src={item.track.album.images[0]?.url} alt={item.track.name} />
+                            <h5>{index + 1}. {item.track.name}</h5>
+                        </li>
                     ))}
                 </ul>
             ) : (
