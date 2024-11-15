@@ -18,9 +18,9 @@ export const setAccessToken = (token) => {
  * These are the tracks the user has listened to most over a specified time range
  * @returns {Array} - An array of the user's top track objects, or an empty array if an error occurs
  */
-export const getTopTracks = async () => {
+export const getTopTracks = async (limit = 10) => {
     try {
-        const response = await spotifyApi.getMyTopTracks();
+        const response = await spotifyApi.getMyTopTracks({ limit });
         return response.items;
     } catch (error) {
         console.error("Error fetching top tracks:", error);
@@ -33,9 +33,9 @@ export const getTopTracks = async () => {
  * These are the artists the user listens to most frequently
  * @returns {Array} - An array of the user's top artist objects, or an empty array if an error occurs
  */
-export const getTopArtists = async () => {
+export const getTopArtists = async (limit = 10) => {
     try {
-        const response = await spotifyApi.getMyTopArtists();
+        const response = await spotifyApi.getMyTopArtists({ limit });
         return response.items;
     } catch (error) {
         console.error("Error fetching top artists:", error);
@@ -47,9 +47,9 @@ export const getTopArtists = async () => {
  * These are the tracks the user has recently listened to
  * @returns {Array} - An array f the user's recently played track objects, or an empty array if an error occurs
  */
-export const getRecentlyPlayed = async () => {
+export const getRecentlyPlayed = async (limit = 10) => {
     try {
-        const response = await spotifyApi.getMyRecentlyPlayedTracks();
+        const response = await spotifyApi.getMyRecentlyPlayedTracks({ limit });
         return response.items;
     } catch (error) {
         console.error("Error fetching recently played tracks:", error);
