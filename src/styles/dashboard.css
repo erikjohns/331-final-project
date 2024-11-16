@@ -1,4 +1,161 @@
-img {
-    max-width: 100px;
+.top-artists {
+    display: flex;
+    list-style-type: none;
+}
+
+.top-artists-dashboard-container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 32px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-section-header {
+    font-family: "zeitung-micro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.top-artists-list-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-artist-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-artist-first h1 {
+    font-family: "zeitung", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.top-artist-first p {
+    font-family: "zeitung-micro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top-artist-image {
+    width: 20rem;
     height: auto;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0.5rem 0;
+}
+
+.artist h1 {
+    font-family: "zeitung", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+}
+
+.artist p {
+    font-family: "zeitung-micro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.artist .artist-image {
+    width: 6rem;
+    height: auto;
+    margin: 0 1rem;
+}
+
+.artist-image {
+    border-radius: 50%;
+}
+
+/** Top Tracks / Recent Tracks Styling */
+
+.two-columns-dashboard {
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.track-list-dashboard-container {
+    width: 45%;
+    padding: 1rem;
+    border-radius: 32px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.top-track-first {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.first-track-image {
+    width: 15rem;
+    height: auto;
+    margin: 0 1rem;
+    border-radius: 1rem;
+}
+
+.track-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.track-image {
+    width: 6rem;
+    height: auto;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+.track h1 {
+    font-family: "zeitung", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+}
+
+.track-info {
+    width: 100%;
+}
+
+.track-info h1 {
+    white-space: nowrap;        /* Prevent text from wrapping */
+    overflow: hidden;           /* Hide overflowing text */
+    text-overflow: ellipsis;    /* Add ellipsis (...) */
+    max-width: 70%;           /* Adjust width as needed */
+    font-family: "zeitung", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+}
+
+.track p {
+    font-family: "zeitung-micro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 1.2rem;
 }
