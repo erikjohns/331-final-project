@@ -36,17 +36,17 @@ export const useSpotifyData = () => {
         const fetchData = async () => {
             try {
                 // Fetch the user's top tracks
-                const tracks = await getTopTracks();
+                const tracks = await getTopTracks(5);
                 console.log("Fetched Top Tracks:", tracks);
                 setTopTracks(tracks);
 
                 // Fetch the user's top artists
-                const artists = await getTopArtists();
+                const artists = await getTopArtists(5);
                 console.log("Fetched Top Artists:", artists);
                 setTopArtists(artists);
 
                 // Fetch the user's recently played tracks
-                const recent = await getRecentlyPlayed();
+                const recent = await getRecentlyPlayed(5);
                 console.log("Fetched Recently Played Tracks:", recent);
                 setRecentTracks(recent);
             } catch (error) {
