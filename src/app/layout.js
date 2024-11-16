@@ -9,7 +9,12 @@ export default function RootLayout({ children }) {
     return (
         <SpotifyProvider>
             <html lang="en">
-            <body>{children}</body>
+            <head>
+                <link rel="stylesheet" href="https://use.typekit.net/wqk5pyn.css"/>
+            </head>
+            <body>
+                {children}
+            </body>
             </html>
         </SpotifyProvider>
     );
