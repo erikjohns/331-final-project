@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20898780-c795-49cc-9bae-9f0c1139fe60" name="Changes" comment="Clean Next App">
-      <change afterPath="$PROJECT_DIR$/src/app/api/callback/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/login/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/login/page.js" afterDir="false" />
+    <list default="true" id="20898780-c795-49cc-9bae-9f0c1139fe60" name="Changes" comment="Temp Styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -53,21 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/erikjohns/Desktop/CSCI331/331-final-project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.run.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/erikjohns/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/erikjohns/Desktop/CSCI331/331-final-project/src/components",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.run.executor": "Run",
+    "ts.external.directory.path": "/Users/erikjohns/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -78,7 +73,12 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/api/callback" />
+      <recent name="$PROJECT_DIR$/src/app/api/login" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/styles" />
     </key>
@@ -112,7 +112,8 @@
       <updated>1731466367339</updated>
       <workItem from="1731466368416" duration="1242000" />
       <workItem from="1731467616311" duration="2445000" />
-      <workItem from="1731476479675" duration="4021000" />
+      <workItem from="1731476479675" duration="15207000" />
+      <workItem from="1731650585758" duration="14009000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Push">
       <option name="closed" value="true" />
@@ -194,7 +195,135 @@
       <option name="project" value="LOCAL" />
       <updated>1731476933122</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Clean Next App">
+      <option name="closed" value="true" />
+      <created>1731526007430</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731526007430</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Authentication">
+      <option name="closed" value="true" />
+      <created>1731544898795</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731544898795</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Login Page">
+      <option name="closed" value="true" />
+      <created>1731544921039</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731544921039</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adjusted Config">
+      <option name="closed" value="true" />
+      <created>1731544932070</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731544932070</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Installed Dependencies">
+      <option name="closed" value="true" />
+      <created>1731544941872</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731544941872</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Setup Spotify Context">
+      <option name="closed" value="true" />
+      <created>1731544964867</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1731544964867</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fetch and Display Spotify Data">
+      <option name="closed" value="true" />
+      <created>1731544976714</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1731544976714</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added Comments">
+      <option name="closed" value="true" />
+      <created>1731545521637</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1731545521637</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added Comments">
+      <option name="closed" value="true" />
+      <created>1731546034804</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1731546034804</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added Comments">
+      <option name="closed" value="true" />
+      <created>1731575669075</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1731575669075</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added Images and Styling">
+      <option name="closed" value="true" />
+      <created>1731695598136</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1731695598136</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added Limit Parameter">
+      <option name="closed" value="true" />
+      <created>1731695619081</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1731695619081</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added Web Font">
+      <option name="closed" value="true" />
+      <created>1731744920148</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1731744920148</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Broke Into Components">
+      <option name="closed" value="true" />
+      <created>1731744948811</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1731744948811</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Limited to 5">
+      <option name="closed" value="true" />
+      <created>1731744957474</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1731744957474</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Temp Styling">
+      <option name="closed" value="true" />
+      <created>1731744963279</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1731744963279</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +339,19 @@
     <MESSAGE value="Create Next App" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Clean Next App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean Next App" />
+    <MESSAGE value="Authentication" />
+    <MESSAGE value="Login Page" />
+    <MESSAGE value="Adjusted Config" />
+    <MESSAGE value="Installed Dependencies" />
+    <MESSAGE value="Setup Spotify Context" />
+    <MESSAGE value="Fetch and Display Spotify Data" />
+    <MESSAGE value="Added Comments" />
+    <MESSAGE value="Added Images and Styling" />
+    <MESSAGE value="Added Limit Parameter" />
+    <MESSAGE value="Added Web Font" />
+    <MESSAGE value="Broke Into Components" />
+    <MESSAGE value="Limited to 5" />
+    <MESSAGE value="Temp Styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temp Styling" />
   </component>
 </project>
