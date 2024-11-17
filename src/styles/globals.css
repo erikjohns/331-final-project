@@ -1,12 +1,14 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #121212; /* Spotify black */
+  --foreground: #ffffff; /* White text */
+  --primary-button-bg: #1ED760; /* Spotify green */
+  --primary-button-text: #ffffff; /* White text for buttons */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121212; /* Keep the same dark scheme */
+    --foreground: #ffffff;
   }
 }
 
@@ -31,12 +33,58 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--foreground);
   text-decoration: none;
+}
+
+button {
+  background-color: var(--primary-button-bg); /* Spotify green */
+  color: var(--primary-button-text); /* White text */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #18b754; /* Slightly darker green for hover effect */
+  transform: scale(1.05); /* Subtle zoom-in effect */
+}
+
+button:active {
+  background-color: #148743; /* Even darker green for active effect */
+  transform: scale(1); /* Return to normal scale */
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-  }
+}
+
+/* Styles for the login page */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--foreground); /* White text */
+}
+
+.LoginButton {
+  margin-top: 1.5rem;
+}
+
 }

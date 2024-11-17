@@ -6,6 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import { setAccessToken as setSpotifyAccessToken } from '@/services/spotify';
 import TopArtistsDashboard from '@/components/TopArtistsDashboard';
 import '@/styles/dashboard.css';
+import '@/styles/globals.css';
 import TracksDashboard from "@/components/TracksDashboard";
 import RecentTracksDashboard from "@/components/RecentTracksDashboard";
 

@@ -8,13 +8,16 @@
     width: 80%;
     padding: 1rem;
     border-radius: 32px;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    background-color: #121212; /* Spotify black */
+    color: #ffffff; /* White text */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .dashboard-section-header {
     font-family: "zeitung-micro", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: #1ED760; /* Spotify green */
 }
 
 .top-artists-list-container {
@@ -33,12 +36,14 @@
     font-family: "zeitung", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: #1ED760; /* Spotify green */
 }
 
 .top-artist-first p {
     font-family: "zeitung-micro", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #ffffff; /* White text */
 }
 
 .top-artist-image {
@@ -46,6 +51,7 @@
     height: auto;
     border-radius: 50%;
     margin: 0 1rem;
+    border: 3px solid #1ED760; /* Spotify green border */
 }
 
 .artist {
@@ -60,6 +66,7 @@
     font-weight: 700;
     font-style: normal;
     margin: 0;
+    color: #ffffff; /* White text */
 }
 
 .artist p {
@@ -67,16 +74,15 @@
     font-weight: 400;
     font-style: normal;
     margin: 0;
+    color: #ffffff; /* White text */
 }
 
 .artist .artist-image {
     width: 6rem;
     height: auto;
     margin: 0 1rem;
-}
-
-.artist-image {
     border-radius: 50%;
+    border: 2px solid #1ED760; /* Spotify green border */
 }
 
 /** Top Tracks / Recent Tracks Styling */
@@ -93,7 +99,9 @@
     width: 45%;
     padding: 1rem;
     border-radius: 32px;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    background-color: #121212; /* Spotify black */
+    color: #ffffff; /* White text */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .top-track-first {
@@ -107,6 +115,7 @@
     height: auto;
     margin: 0 1rem;
     border-radius: 1rem;
+    border: 3px solid #1ED760; /* Spotify green border */
 }
 
 .track-list {
@@ -128,6 +137,7 @@
     height: auto;
     margin: 0 1rem;
     border-radius: 0.5rem;
+    border: 2px solid #1ED760; /* Spotify green border */
 }
 
 .track h1 {
@@ -135,6 +145,7 @@
     font-weight: 700;
     font-style: normal;
     margin: 0;
+    color: #ffffff; /* White text */
 }
 
 .track-info {
@@ -145,11 +156,12 @@
     white-space: nowrap;        /* Prevent text from wrapping */
     overflow: hidden;           /* Hide overflowing text */
     text-overflow: ellipsis;    /* Add ellipsis (...) */
-    max-width: 70%;           /* Adjust width as needed */
+    max-width: 70%;             /* Adjust width as needed */
     font-family: "zeitung", sans-serif;
     font-weight: 700;
     font-style: normal;
     margin: 0;
+    color: #1ED760; /* Spotify green */
 }
 
 .track p {
@@ -158,4 +170,5 @@
     font-style: normal;
     margin: 0;
     font-size: 1.2rem;
+    color: #ffffff; /* White text */
 }
