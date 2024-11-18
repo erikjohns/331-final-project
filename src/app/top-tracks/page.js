@@ -4,17 +4,13 @@ import { useSpotifyData } from '@/hooks/useSpotifyData';
 import { useSpotify } from '@/context/SpotifyContext';
 import { useSearchParams } from 'next/navigation';
 import { setAccessToken as setSpotifyAccessToken } from '@/services/spotify';
-import TopArtistsDashboard from '@/components/TopArtistsDashboard';
 import '@/styles/dashboard.css';
 import '@/styles/globals.css';
-import TracksDashboard from '@/components/TracksDashboard';
-import RecentTracksDashboard from '@/components/RecentTracksDashboard';
-import Link from 'next/link';
 
 export default function TopTracks() {
     const searchParams = useSearchParams();
     const { accessToken, updateAccessToken } = useSpotify();
-    const { topTracks, topArtists, recentTracks } = useSpotifyData(5);
+    const { topTracks, topArtists, recentTracks} = useSpotifyData(5);
 
     // Get access token from URL and set it in the context
     useEffect(() => {
@@ -28,7 +24,7 @@ export default function TopTracks() {
 
     return (
         <main>
-            <topTracks tracks={topTracks} />
+            <TopTracks tracks={topTracks} />
         </main>
     );
 }
