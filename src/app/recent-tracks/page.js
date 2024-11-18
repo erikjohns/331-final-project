@@ -10,6 +10,7 @@ import '@/styles/globals.css';
 import TracksDashboard from '@/components/TracksDashboard';
 import RecentTracksDashboard from '@/components/RecentTracksDashboard';
 import Link from 'next/link';
+import NavBar from "@/components/NavBar";
 
 export default function RecentTracks() {
     const searchParams = useSearchParams();
@@ -28,6 +29,7 @@ export default function RecentTracks() {
 
     return (
         <main>
+            <NavBar />
             <RecentTracksDashboard tracks={recentTracks} />
         </main>
     );

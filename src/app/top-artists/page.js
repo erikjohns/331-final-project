@@ -10,6 +10,7 @@ import '@/styles/globals.css';
 import TracksDashboard from '@/components/TracksDashboard';
 import RecentTracksDashboard from '@/components/RecentTracksDashboard';
 import Link from 'next/link';
+import NavBar from "@/components/NavBar";
 
 export default function TopArtists() {
     const searchParams = useSearchParams();
@@ -28,6 +29,7 @@ export default function TopArtists() {
 
     return (
         <main>
+            <NavBar />
             <TopArtistsDashboard artists={topArtists} />
         </main>
     );

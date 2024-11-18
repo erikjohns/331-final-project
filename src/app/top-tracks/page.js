@@ -6,6 +6,8 @@ import { useSearchParams } from 'next/navigation';
 import { setAccessToken as setSpotifyAccessToken } from '@/services/spotify';
 import '@/styles/dashboard.css';
 import '@/styles/globals.css';
+import TopTracksPage from "@/components/TopTracks";
+import NavBar from "@/components/NavBar";
 
 export default function TopTracks() {
     const searchParams = useSearchParams();
@@ -24,7 +26,8 @@ export default function TopTracks() {
 
     return (
         <main>
-            <TopTracks tracks={topTracks} />
+            <NavBar />
+            <TopTracksPage tracks={topTracks}/>
         </main>
     );
 }
