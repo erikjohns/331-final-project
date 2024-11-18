@@ -9,7 +9,7 @@ export default function RecentTracksPage({ tracks }) {
             <div className={'track-list-container'}>
                 <ul className={'track-list'}>
                     {tracks.map((track, index) => (
-                        <li key={track.id}>
+                        <li key={index}>
                             <div className={'track'}>
                                 <h1>{index + 1}</h1>
                                 {track.track.album.images.length > 0 && (
