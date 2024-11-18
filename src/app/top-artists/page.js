@@ -7,15 +7,12 @@ import { setAccessToken as setSpotifyAccessToken } from '@/services/spotify';
 import TopArtistsDashboard from '@/components/TopArtistsDashboard';
 import '@/styles/dashboard.css';
 import '@/styles/globals.css';
-import TracksDashboard from '@/components/TracksDashboard';
-import RecentTracksDashboard from '@/components/RecentTracksDashboard';
-import Link from 'next/link';
 import NavBar from "@/components/NavBar";
 
 export default function TopArtists() {
     const searchParams = useSearchParams();
     const { accessToken, updateAccessToken } = useSpotify();
-    const { topTracks, topArtists, recentTracks } = useSpotifyData(5);
+    const { topArtists } = useSpotifyData(5);
 
     // Get access token from URL and set it in the context
     useEffect(() => {

@@ -12,7 +12,7 @@ import NavBar from "@/components/NavBar";
 export default function TopTracks() {
     const searchParams = useSearchParams();
     const { accessToken, updateAccessToken } = useSpotify();
-    const { topTracks, topArtists, recentTracks} = useSpotifyData(5);
+    const { topTracks } = useSpotifyData(5);
 
     // Get access token from URL and set it in the context
     useEffect(() => {
