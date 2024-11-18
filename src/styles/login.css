@@ -1,0 +1,22 @@
+.login-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.login-page img {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
