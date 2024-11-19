@@ -47,8 +47,10 @@ export const useSpotifyData = () => {
                 setTopArtists(artists);
 
                 // Calculate top genres
+                const artistsForGenres = await getTopArtists(30);
                 const genreCounts = {};
-                artists.forEach(artist => {
+
+                artistsForGenres.forEach(artist => {
                     artist.genres.forEach(genre => {
                         genreCounts[genre] = (genreCounts[genre] || 0) + 1;
                     });
