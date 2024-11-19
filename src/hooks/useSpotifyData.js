@@ -14,6 +14,7 @@ export const useSpotifyData = () => {
     // State variables to store fetched data
     const [topTracks, setTopTracks] = useState([]);
     const [topArtists, setTopArtists] = useState([]);
+    const [topGenres, setTopGenres] = useState([]);
     const [recentTracks, setRecentTracks] = useState([]);
 
     /**
@@ -44,6 +45,21 @@ export const useSpotifyData = () => {
                 const artists = await getTopArtists(5);
                 console.log("Fetched Top Artists:", artists);
                 setTopArtists(artists);
+
+                // Calculate top genres
+                const genreCounts = {};
+                artists.forEach(artist => {
+                    artist.genres.forEach(genre => {
+                        genreCounts[genre] = (genreCounts[genre] || 0) + 1;
+                    });
+                });
+
+                const sortedGenres = Object.entries(genreCounts)
+                    .sort(([, countA], [, countB]) => countB - countA)
+                    .map(([genre]) => genre);
+
+                console.log("Calculated Top Genres:", sortedGenres);
+                setTopGenres(sortedGenres);
 
                 // Fetch the user's recently played tracks
                 const recent = await getRecentlyPlayed(5);
