@@ -46,6 +46,11 @@ export const useSpotifyData = () => {
                 console.log("Fetched Top Artists:", artists);
                 setTopArtists(artists);
 
+                // Fetch the user's recently played tracks
+                const recent = await getRecentlyPlayed(5);
+                console.log("Fetched Recently Played Tracks:", recent);
+                setRecentTracks(recent);
+
                 // Calculate top genres
                 const artistsForGenres = await getTopArtists(30);
                 const genreCounts = {};
@@ -61,12 +66,7 @@ export const useSpotifyData = () => {
                     .map(([genre]) => genre);
 
                 console.log("Calculated Top Genres:", sortedGenres);
-                setTopGenres(sortedGenres);
-
-                // Fetch the user's recently played tracks
-                const recent = await getRecentlyPlayed(5);
-                console.log("Fetched Recently Played Tracks:", recent);
-                setRecentTracks(recent);
+                setTopGenres(sortedGenres.slice(0,5));
             } catch (error) {
                 console.error("Error fetching Spotify data:", error);
             }
@@ -75,5 +75,5 @@ export const useSpotifyData = () => {
         fetchData();
     }, [accessToken]); // Re-run the effect whenever the access token changes
 
-    return { topTracks, topArtists, recentTracks };
+    return { topTracks, topArtists, topGenres, recentTracks };
 };

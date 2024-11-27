@@ -39,7 +39,7 @@ export default function TopArtistsDashboard ({ artists }) {
                                 <div className="artist-info">
                                     <h1>{artist.name}</h1>
                                     <p>
-                                        Followers: {firstArtist.followers.total}
+                                        Followers: {artist.followers.total}
                                     </p>
                                 </div>
                             </div>
