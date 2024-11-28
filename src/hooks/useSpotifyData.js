@@ -53,20 +53,34 @@ export const useSpotifyData = () => {
 
                 // Calculate top genres
                 const artistsForGenres = await getTopArtists(30);
-                const genreCounts = {};
+                const genreData = {};
 
+                // Populate genreData with counts and contributing artists
                 artistsForGenres.forEach(artist => {
                     artist.genres.forEach(genre => {
-                        genreCounts[genre] = (genreCounts[genre] || 0) + 1;
+                        if (!genreData[genre]) {
+                            genreData[genre] = {
+                                name: genre,
+                                count: 0,
+                                artists: []
+                            };
+                        }
+                        genreData[genre].count += 1;
+                        if (!genreData[genre].artists.some(a => a.name === artist.name)) {
+                            genreData[genre].artists.push({
+                                name: artist.name,
+                                spotifyUrl: artist.external_urls.spotify, // Add Spotify profile URL
+                            });
+                        }
                     });
                 });
 
-                const sortedGenres = Object.entries(genreCounts)
-                    .sort(([, countA], [, countB]) => countB - countA)
-                    .map(([genre]) => genre);
+                const topGenres = Object.values(genreData)
+                    .sort((a, b) => b.count - a.count)
+                    .slice(0, 5);
 
-                console.log("Calculated Top Genres:", sortedGenres);
-                setTopGenres(sortedGenres.slice(0,5));
+                console.log("Top Genres with Artists:", topGenres);
+                setTopGenres(topGenres);
             } catch (error) {
                 console.error("Error fetching Spotify data:", error);
             }

@@ -173,6 +173,17 @@
     color: #ffffff; /* White text */
 }
 
+/* Genre styling */
+.artist-link {
+    color: #1ED760; /* Spotify green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.artist-link:hover {
+    text-decoration: underline;
+}
+
 .dashboard-taskbar {
     display: flex;
     align-items: center;
