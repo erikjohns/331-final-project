@@ -32,6 +32,7 @@
 
 .artist-information-container span {
     color: #1ED760;
+    font-weight: bold;
 }
 
 .artist-information-container button {
