@@ -1,9 +1,10 @@
 import Link from "next/link";
+import '@/styles/NavBar.css';
 
 export default function NavBar() {
     return (
         <div className="dashboard-taskbar">
-            <h1 className="taskbar-title">Spotify Stats</h1>
+            <h1 className="taskbar-title">SpotiMetrics</h1>
             <div className="taskbar-buttons">
                 <Link href="/dashboard">
                     <button>Home Dashboard</button>

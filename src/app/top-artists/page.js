@@ -4,10 +4,10 @@ import { useSpotifyData } from '@/hooks/useSpotifyData';
 import { useSpotify } from '@/context/SpotifyContext';
 import { useSearchParams } from 'next/navigation';
 import { setAccessToken as setSpotifyAccessToken } from '@/services/spotify';
-import TopArtistsDashboard from '@/components/TopArtistsDashboard';
 import '@/styles/dashboard.css';
 import '@/styles/globals.css';
 import NavBar from "@/components/NavBar";
+import TopArtistsDashboard from "@/components/TopArtistsDashboard";
 
 export default function TopArtists() {
     const searchParams = useSearchParams();
@@ -27,7 +27,9 @@ export default function TopArtists() {
     return (
         <main>
             <NavBar />
-            <TopArtistsDashboard artists={topArtists} />
+            <div>
+                <TopArtistsDashboard artists={topArtists} />
+            </div>
         </main>
     );
 }
