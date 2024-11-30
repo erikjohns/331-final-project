@@ -11,11 +11,12 @@ import TracksDashboard from '@/components/TracksDashboard';
 import RecentTracksDashboard from '@/components/RecentTracksDashboard';
 import NavBar from "@/components/NavBar";
 import TopGenresDashboard from "@/components/TopGenresDashboard";
+import TopAlbumsDashboard from "@/components/TopAlbumsDashboard";
 
 export default function Dashboard() {
     const searchParams = useSearchParams();
     const { accessToken, updateAccessToken } = useSpotify();
-    const { topTracks, topArtists, recentTracks,topGenres } = useSpotifyData(5);
+    const { topTracks, topArtists, recentTracks,topGenres, topAlbums } = useSpotifyData(5);
 
     // Get access token from URL and set it in the context
     useEffect(() => {
@@ -37,7 +38,11 @@ export default function Dashboard() {
                 <TracksDashboard id="top-tracks" tracks={topTracks} />
                 <RecentTracksDashboard id="recent-tracks" tracks={recentTracks} />
             </div>
-            <TopGenresDashboard genres={topGenres} />
+            <div className={'two-columns-dashboard'}>
+                <TopGenresDashboard genres={topGenres} />
+                <TopAlbumsDashboard albums={topAlbums} />
+            </div>
+
         </div>
     );
 }

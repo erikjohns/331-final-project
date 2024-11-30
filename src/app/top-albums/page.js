@@ -4,15 +4,15 @@ import { useSpotifyData } from '@/hooks/useSpotifyData';
 import { useSpotify } from '@/context/SpotifyContext';
 import { useSearchParams } from 'next/navigation';
 import { setAccessToken as setSpotifyAccessToken } from '@/services/spotify';
-import TopGenresDashboard from '@/components/TopGenresDashboard';
+import TopAlbumsDashboard from "@/components/TopAlbumsDashboard";
 import '@/styles/dashboard.css';
 import '@/styles/globals.css';
 import NavBar from "@/components/NavBar";
 
-export default function TopGenres() {
+export default function TopAlbums() {
     const searchParams = useSearchParams();
     const { accessToken, updateAccessToken } = useSpotify();
-    const { topGenres } = useSpotifyData(5);
+    const { topAlbums } = useSpotifyData(5);
 
     // Get access token from URL and set it in the context
     useEffect(() => {
@@ -27,7 +27,7 @@ export default function TopGenres() {
     return (
         <main>
             <NavBar />
-            <TopGenresDashboard genres={topGenres} />
+            <TopAlbumsDashboard albums={topAlbums} />
         </main>
     );
 }
