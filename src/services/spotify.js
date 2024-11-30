@@ -90,3 +90,16 @@ export const getArtistAlbums = async (artistId, limit = 20) => {
     }
 };
 
+/**
+ * Fetch details information about a specific album from Spotify
+ * @param albumId - The Spotify ID of the album
+ * @returns {Object} - An object containing detailed information about the album, or null if an error occurs
+ */
+export const getAlbumDetails = async (albumId) => {
+    try {
+        return await spotifyApi.getAlbum(albumId);
+    } catch (error) {
+        console.error(`Error fetching albums for album with ID ${albumId}:`, error);
+    }
+}
+
