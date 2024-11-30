@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import '@/styles/ArtistView.css';
 import capitalizeWords from "@/utils/CapitalizeWords";
 import formatDate from "@/utils/FormatDate";
+import Link from "next/link";
 
 export default function ArtistView({ artist, albums }) {
     return (
@@ -36,7 +37,7 @@ export default function ArtistView({ artist, albums }) {
                     <div className="albums-inner-container">
                         {albums.length > 0 ? (
                             albums.map((album) => (
-                                <div key={album.id} className="album-card">
+                                <Link key={album.id} className="album-card" href={`/album/${album.id}`}>
                                     {album.images.length > 0 && (
                                         <img
                                             src={album.images[0].url}
@@ -46,7 +47,7 @@ export default function ArtistView({ artist, albums }) {
                                     )}
                                     <h3>{album.name}</h3>
                                     <p>{formatDate(album.release_date)}</p>
-                                </div>
+                                </Link>
                             ))
                         ) : (
                             <p>No albums found.</p>
