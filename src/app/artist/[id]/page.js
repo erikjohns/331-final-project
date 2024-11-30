@@ -2,11 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { getArtistDetails } from '@/services/spotify';
+import { getArtistDetails, getArtistAlbums } from '@/services/spotify';
+import ArtistView from "@/components/ArtistView";
 
 export default function ArtistDetails() {
-    const { id } = useParams(); // Dynamically retrieve the artist ID from the URL
+    const { id } = useParams();
     const [artist, setArtist] = useState(null);
+    const [albums, setAlbums] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -14,9 +16,11 @@ export default function ArtistDetails() {
             const fetchArtistData = async () => {
                 try {
                     const artistData = await getArtistDetails(id);
+                    const artistAlbums = await getArtistAlbums(id);
                     setArtist(artistData);
+                    setAlbums(artistAlbums);
                 } catch (error) {
-                    console.error('Error fetching artist details:', error);
+                    console.error('Error fetching artist data:', error);
                 } finally {
                     setLoading(false);
                 }
@@ -29,18 +33,6 @@ export default function ArtistDetails() {
     if (!artist) return <div>Artist not found</div>;
 
     return (
-        <div className="artist-details-container">
-            <h1>{artist.name}</h1>
-            {artist.images.length > 0 && (
-                <img
-                    src={artist.images[0].url}
-                    alt={artist.name}
-                    className="artist-details-image"
-                />
-            )}
-            <p>Followers: {artist.followers.total.toLocaleString('en-us')}</p>
-            <p>Genres: {artist.genres.join(', ')}</p>
-            <p>Popularity: {artist.popularity}</p>
-        </div>
+        <ArtistView artist={artist} albums={albums} />
     );
 }

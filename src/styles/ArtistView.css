@@ -1,0 +1,49 @@
+.artist-details-container {
+    margin: 5rem auto 0 auto;
+    width: 80%;
+}
+
+.artist-details-image {
+    border: 3px solid #1ED760;
+    border-radius: 2rem;
+    width: 50%;
+    height: auto;
+}
+
+.artist-information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist-information-container {
+    width: 47%;
+}
+
+.artist-information-container h1 {
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+
+.artist-information-container p {
+    font-size: 1.5rem;
+}
+
+.artist-information-container span {
+    color: #1ED760;
+}
+
+.artist-information-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.artist-information-container button img {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
