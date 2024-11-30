@@ -1,0 +1,102 @@
+.album-details-container {
+    margin: 7rem auto 0 auto;
+    width: 80%;
+}
+
+.album-information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album-details-image {
+    border: 3px solid #1ED760;
+    border-radius: 2rem;
+    width: 50%;
+    height: auto;
+}
+
+.album-information-container {
+    width: 47%;
+}
+
+.album-information-container h1 {
+    font-size: 5rem;
+    margin: 0.2rem 0;
+}
+
+.album-information-container h3 {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.album-information-container p {
+    font-size: 1.5rem;
+}
+
+.album-information-container span {
+    color: #1ED760;
+}
+
+.album-tracklist {
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.track-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 1rem 0;
+}
+
+.track-right, .track-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-left h5 {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.track-left p {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.track-explicit {
+    font-size: 0.75rem;
+    padding: 0.2rem;
+    background-color: gray;
+    color: #121212;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+
+.track-right h5, .total-album-runtime {
+    font-size: 1.2rem;
+    margin-right: 0.85rem;
+    color: gray;
+}
+
+.track-play-button {
+    font-size: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.track-play-button:hover {
+    color: #1ED760;
+    transform: scale(1.05);
+}
+
+.total-album-runtime {
+    margin-right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 1rem 0;
+}
