@@ -15,6 +15,7 @@ export const useSpotifyData = () => {
     const [topTracks, setTopTracks] = useState([]);
     const [topArtists, setTopArtists] = useState([]);
     const [topGenres, setTopGenres] = useState([]);
+    const [topAlbums, setTopAlbums] = useState([]);
     const [recentTracks, setRecentTracks] = useState([]);
 
     /**
@@ -78,9 +79,46 @@ export const useSpotifyData = () => {
                 const topGenres = Object.values(genreData)
                     .sort((a, b) => b.count - a.count)
                     .slice(0, 5);
-
-                console.log("Top Genres with Artists:", topGenres);
                 setTopGenres(topGenres);
+                console.log("Top Genres with Artists:", topGenres);
+
+                // calculate top albums
+                const tracksForAlbums = await getTopTracks(50);
+                const albumData = {};
+
+                // base score based on rank
+                tracksForAlbums.forEach((track, index) => {
+                    const score = Math.min(Math.log2(tracksForAlbums.length - index + 1), 5); // max contribution of 5
+
+                    const albumId = track.album.id;
+                    if (!albumData[albumId]) {
+                        albumData[albumId] = {
+                            name: track.album.name,
+                            id: albumId,
+                            artist: track.album.artists[0].name,
+                            image: track.album.images[0]?.url,
+                            points: 0,
+                            trackCount: 0, // number of tracks contributing to this album
+                        };
+                    }
+
+                    albumData[albumId].points += score;
+                    albumData[albumId].trackCount += 1;
+                });
+
+                // Favor albums with more contributing tracks by multiplying points by trackCount
+                Object.values(albumData).forEach(album => {
+                    album.points *= (album.trackCount * 0.2) + 1; // Amplify based on breadth
+                });
+
+                // Convert to array and sort by points in descending order
+                const topAlbums = Object.values(albumData)
+                    .sort((a, b) => b.points - a.points)
+                    .slice(0,5);
+
+                setTopAlbums(topAlbums);
+                console.log("Calculated Top Albums", topAlbums);
+
             } catch (error) {
                 console.error("Error fetching Spotify data:", error);
             }
