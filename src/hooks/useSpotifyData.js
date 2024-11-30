@@ -127,5 +127,5 @@ export const useSpotifyData = () => {
         fetchData();
     }, [accessToken]); // Re-run the effect whenever the access token changes
 
-    return { topTracks, topArtists, topGenres, recentTracks };
+    return { topTracks, topArtists, topGenres, recentTracks, topAlbums };
 };
