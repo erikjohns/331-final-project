@@ -1,5 +1,5 @@
 .artist-details-container {
-    margin: 5rem auto 0 auto;
+    margin: 7rem auto 0 auto;
     width: 80%;
 }
 
@@ -46,4 +46,76 @@
     width: 1.5rem;
     height: auto;
     margin-right: 0.5rem;
+}
+
+.albums-container {
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.albums-container h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.albums-inner-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #1ED760 transparent;
+}
+
+.albums-inner-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.albums-inner-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.albums-inner-container::-webkit-scrollbar-thumb {
+    background-color: #1ED760;
+    border-radius: 4px;
+}
+
+.album-card {
+    margin: 1rem 2rem 1rem 0;
+    padding: 0 0 1rem 0;
+    transition: 0.2s ease-in-out;
+    z-index: 10;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+}
+
+.album-card:hover {
+    transform: scale(1.05);
+    border-color: #1ED760;
+}
+
+.album-card:first-child:hover {
+    margin-left: 1rem;
+}
+
+.album-card:hover h3, .album-card:hover p {
+    margin-left: 0.4rem;
+}
+
+.album-card img {
+    width: 20rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.album-card h3 {
+    font-size: 1.5rem;
+    margin: 0.75rem 0 0.5rem 0;
+    transition: 0.2s ease-in-out;
+}
+
+.album-card p {
+    font-size: 1.2rem;
+    transition: 0.2s ease-in-out;
 }

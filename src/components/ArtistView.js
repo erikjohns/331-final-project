@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import '@/styles/ArtistView.css';
 import capitalizeWords from "@/utils/CapitalizeWords";
+import formatDate from "@/utils/FormatDate";
 
 export default function ArtistView({ artist, albums }) {
     return (
@@ -43,7 +44,8 @@ export default function ArtistView({ artist, albums }) {
                                             className="album-image"
                                         />
                                     )}
-                                    <p>{album.name}</p>
+                                    <h3>{album.name}</h3>
+                                    <p>{formatDate(album.release_date)}</p>
                                 </div>
                             ))
                         ) : (
