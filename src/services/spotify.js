@@ -71,3 +71,22 @@ export const getArtistDetails = async (artistId) => {
     }
 };
 
+/**
+ * Fetch albums of a specific artist from Spotify, filtering only for LPs
+ * @param {string} artistId - The Spotify ID of the artist
+ * @param {number} limit - Number of albums to fetch per page (default: 20)
+ * @returns {Array} - An array of album objects, or an empty array if an error occurs
+ */
+export const getArtistAlbums = async (artistId, limit = 20) => {
+    try {
+        const response = await spotifyApi.getArtistAlbums(artistId, {
+            limit,
+            include_groups: 'album', // Only include full-length albums (LPs)
+        });
+        return response.items;
+    } catch (error) {
+        console.error(`Error fetching albums for artist with ID ${artistId}:`, error);
+        return [];
+    }
+};
+
