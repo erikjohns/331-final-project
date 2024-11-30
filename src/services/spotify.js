@@ -56,3 +56,18 @@ export const getRecentlyPlayed = async (limit = 10) => {
         return [];
     }
 };
+
+/**
+ * Fetch detailed information about a specific artist from Spotify
+ * @param {string} artistId - The Spotify ID of the artist
+ * @returns {Object} - An object containing detailed information about the artist, or null if an error occurs
+ */
+export const getArtistDetails = async (artistId) => {
+    try {
+        return await spotifyApi.getArtist(artistId);
+    } catch (error) {
+        console.error(`Error fetching details for artist with ID ${artistId}:`, error);
+        return null;
+    }
+};
+
