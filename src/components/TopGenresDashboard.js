@@ -5,11 +5,11 @@ export default function TopGenresDashboard({ genres }) {
     const displayedArtists = new Set();
 
     return (
-        <div className={'track-list-dashboard-container'}>
+        <div className={'genre-list-dashboard-container'}>
             <h2 className={'dashboard-section-header'}>TOP GENRES</h2>
 
             <div className={'track-list-container'}>
-                <ul className={'track-list'}>
+                <ul className={'genre-list'}>
                     {genres.map((genre, index) => {
                         // Separate new and repeated artists
                         const newArtists = genre.artists.filter(artist => !displayedArtists.has(artist.name));
@@ -23,9 +23,9 @@ export default function TopGenresDashboard({ genres }) {
 
                         return (
                             <li key={index}>
-                                <div className={'track'}>
+                                <div className={'genre'}>
                                     <h1>{index + 1 + "."}</h1>
-                                    <div className={'track-info'}>
+                                    <div className={'genre-info'}>
                                         <h1>{genre.name}</h1>
                                         <p>
                                             Contributing Artists:{" "}

@@ -17,6 +17,9 @@ export default function NavBar() {
                 <Link href="/recent-tracks">
                     <button>Recent Tracks</button>
                 </Link>
+                <Link href="/top-genres">
+                    <button>Top Genres</button>
+                </Link>
             </div>
         </div>
     )

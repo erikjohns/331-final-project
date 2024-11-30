@@ -37,7 +37,10 @@ export default function Dashboard() {
                 <TracksDashboard id="top-tracks" tracks={topTracks} />
                 <RecentTracksDashboard id="recent-tracks" tracks={recentTracks} />
             </div>
-            <TopGenresDashboard genres={topGenres} />
+            <div className={'two-columns-dashboard'}>
+                <TopGenresDashboard genres={topGenres} />
+            </div>
+
         </div>
     );
 }
