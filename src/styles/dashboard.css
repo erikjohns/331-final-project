@@ -240,4 +240,14 @@
     text-decoration: underline;
 }
 
+.top-album-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #1ED760;
+}
+
+.top-album-artist-link:hover {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+}
+
 

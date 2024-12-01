@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TopAlbumsDashboard({ albums }) {
     if (!albums || albums.length === 0) return null;
 
@@ -11,17 +13,22 @@ export default function TopAlbumsDashboard({ albums }) {
                         <li key={album.id}>
                             <div className={'track'}>
                                 <h1>{index + 1}</h1>
-                                {/* Directly use the image URL since it's a string */}
+                                <Link href={`/album/${album.id}`}>
                                 {album.image && (
                                     <img
-                                        src={album.image} // Use the direct image URL
+                                        src={album.image}
                                         alt={album.name}
                                         className={index === 0 ? 'first-track-image' : 'track-image'}
                                     />
                                 )}
+                                </Link>
                                 <div className={'track-info'}>
+                                    <Link className={"top-album-link"} href={`/album/${album.id}`}>
                                     <h1>{album.name}</h1>
-                                    <p>{album.artist}</p>
+                                    </Link>
+                                    <Link href={`/artist/${album.artist.id}`}>
+                                    <p className={"top-album-artist-link"}>{album.artist.name}</p>
+                                    </Link>
                                 </div>
                             </div>
                         </li>

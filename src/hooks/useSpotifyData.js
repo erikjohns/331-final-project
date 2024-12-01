@@ -92,7 +92,10 @@ export const useSpotifyData = () => {
                         albumData[albumId] = {
                             name: track.album.name,
                             id: albumId,
-                            artist: track.album.artists[0].name,
+                            artist: {
+                                name: track.album.artists[0].name,
+                                id: track.album.artists[0].id,
+                            },
                             image: track.album.images[0]?.url,
                             points: 0,
                             trackCount: 0, // number of tracks contributing to this album
