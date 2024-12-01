@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TopGenresDashboard({ genres }) {
     if (!genres || genres.length === 0) return null;
 
@@ -30,15 +32,13 @@ export default function TopGenresDashboard({ genres }) {
                                         <p>
                                             Contributing Artists:{" "}
                                             {prioritizedArtists.map((artist, i) => (
-                                                <a
-                                                    key={artist.name}
-                                                    href={artist.spotifyUrl}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
+                                                <Link
+                                                    key={artist.id}
+                                                    href={`/artist/${artist.id}`}
                                                     className={'artist-link'}
                                                 >
                                                     {artist.name}
-                                                </a>
+                                                </Link>
                                             )).reduce((prev, curr) => [prev, ", ", curr])}
                                         </p>
                                     </div>

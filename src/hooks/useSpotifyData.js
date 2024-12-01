@@ -68,10 +68,7 @@ export const useSpotifyData = () => {
                         }
                         genreData[genre].count += 1;
                         if (!genreData[genre].artists.some(a => a.name === artist.name)) {
-                            genreData[genre].artists.push({
-                                name: artist.name,
-                                spotifyUrl: artist.external_urls.spotify, // Add Spotify profile URL
-                            });
+                            genreData[genre].artists.push(artist);
                         }
                     });
                 });
