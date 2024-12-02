@@ -9,7 +9,6 @@ const spotifyApi = new SpotifyWebApi();
  * @param {string} token - The access token obtained after user authentication
  */
 export const setAccessToken = (token) => {
-    console.log('Setting access token:', token);
     spotifyApi.setAccessToken(token);
 };
 
@@ -100,6 +99,14 @@ export const getAlbumDetails = async (albumId) => {
         return await spotifyApi.getAlbum(albumId);
     } catch (error) {
         console.error(`Error fetching albums for album with ID ${albumId}:`, error);
+    }
+}
+
+export const getTrackDetails = async (trackId) => {
+    try {
+        return await spotifyApi.getTrack(trackId);
+    } catch (error) {
+        console.error(`Error fetching track for track with ID ${trackId}:`, error);
     }
 }
 

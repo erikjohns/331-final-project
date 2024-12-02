@@ -1,0 +1,75 @@
+.track-details-container {
+    margin: 7rem auto 0 auto;
+    width: 80%;
+}
+
+.track-information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track-details-image {
+    border: 3px solid #1ED760;
+    border-radius: 2rem;
+    width: 50%;
+    height: auto;
+}
+
+.track-information-container {
+    width: 47%;
+}
+
+.track-information-container h1 {
+    font-size: 5rem;
+    margin: 0.2rem 0;
+}
+
+.track-artist, .track-album {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+    transition: 0.2s ease-in-out;
+    transform-origin: left;
+}
+
+.track-artist:hover, .track-album:hover {
+    color: #1ED760;
+    transform: scale(1.05);
+    margin-right: 0.5rem;
+}
+
+.track-information-container p {
+    font-size: 1.5rem;
+}
+
+.track-info-title {
+    color: #1ED760;
+    font-weight: bold;
+}
+
+.track-information-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.track-information-container button img {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.track-album-artist-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.track-album-artist-container h3 {
+    margin: 0 0 1.5rem 0;
+    white-space: normal;
+}
