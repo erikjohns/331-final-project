@@ -100,6 +100,10 @@
     margin-left: 1rem;
 }
 
+.album-card:last-child:hover {
+    margin-right: 1rem;
+}
+
 .album-card:hover h3, .album-card:hover p {
     margin-left: 0.4rem;
 }
