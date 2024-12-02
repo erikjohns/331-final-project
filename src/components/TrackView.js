@@ -24,12 +24,11 @@ export default function TrackView({ track, lastPlayed }) {
                             <span className={'track-explicit-header'}>E</span>
                         )}</h1>
                         <div className={'track-album-artist-container'}>
-                            <Link href={`/artist/${track.artists[0]?.id}`}>
-                                <h3 className={'track-artist'}>{track.artists[0]?.name}</h3>
-                            </Link>
-                            <h3>&bull;</h3>
                             <Link href={`/album/${track.album?.id}`}>
                                 <h3 className={'track-album'}>{track.album?.name}</h3>
+                            </Link>
+                            <Link href={`/artist/${track.artists[0]?.id}`}>
+                                <h3 className={'track-artist'}>{track.artists[0]?.name}</h3>
                             </Link>
                         </div>
                         {lastPlayed && (

@@ -40,9 +40,14 @@
 
 .track-artist, .track-album {
     font-size: 2.5rem;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 0.5rem 0;
     transition: 0.2s ease-in-out;
     transform-origin: left;
+}
+
+.track-artist {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .track-artist:hover, .track-album:hover {
@@ -72,16 +77,4 @@
     width: 1.5rem;
     height: auto;
     margin-right: 0.5rem;
-}
-
-.track-album-artist-container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.track-album-artist-container h3 {
-    margin: 0 0 1.5rem 0;
-    white-space: normal;
 }

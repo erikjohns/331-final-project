@@ -47,22 +47,21 @@ export default function AlbumView({ album }) {
                     <h1>Track List</h1>
                     {album.tracks.items.length > 0 && album.tracks.items.map((track, index) => (
                         <div key={index} className={'track-card'}>
-                        <div className={'track-left'}>
-                                    <h5>{track.track_number}</h5>
-                                    <p>{track.name}</p>
-                                    {track.explicit && (
-                                        <p><span className={'track-explicit'}>E</span></p>
-                                    )}
-                                </div>
-                                <div className={'track-right'}>
-                                    <h5>{ConvertMilliseconds(track.duration_ms)}</h5>
-                                    <Link href={track.external_urls.spotify} target={'_blank'}>
-                                        <CgPlayButtonO className={'track-play-button'}/>
-                                    </Link>
-                                </div>
+                            <Link href={`/track/${track.id}`} className={'track-left'}>
+                                <h5>{track.track_number}</h5>
+                                <p>{track.name}</p>
+                                {track.explicit && (
+                                    <p><span className={'track-explicit'}>E</span></p>
+                                )}
+                            </Link>
+                            <div className={'track-right'}>
+                                <h5>{ConvertMilliseconds(track.duration_ms)}</h5>
+                                <Link href={track.external_urls.spotify} target={'_blank'}>
+                                    <CgPlayButtonO className={'track-play-button'}/>
+                                </Link>
                             </div>
-                        )
-                    )}
+                        </div>
+                    ))}
                     <h5 className={'total-album-runtime'}>{totalRuntime}</h5>
                 </div>
             </div>

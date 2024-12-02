@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20898780-c795-49cc-9bae-9f0c1139fe60" name="Changes" comment="Temp Styling">
+    <list default="true" id="20898780-c795-49cc-9bae-9f0c1139fe60" name="Changes" comment="Display User's Name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AlbumView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AlbumView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TrackView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TrackView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/TrackView.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/TrackView.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,22 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/erikjohns/Desktop/CSCI331/331-final-project/src/components",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.run.executor": "Run",
-    "ts.external.directory.path": "/Users/erikjohns/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/erikjohns/Desktop/CSCI331/331-final-project/src/components&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.run.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/erikjohns/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -77,10 +82,11 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/artist/[id]" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app/api/callback" />
       <recent name="$PROJECT_DIR$/src/app/api/login" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/styles" />
     </key>
   </component>
   <component name="RunManager">
@@ -113,71 +119,11 @@
       <workItem from="1731466368416" duration="1242000" />
       <workItem from="1731467616311" duration="2445000" />
       <workItem from="1731476479675" duration="15207000" />
-      <workItem from="1731650585758" duration="14009000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial Push">
-      <option name="closed" value="true" />
-      <created>1731467285020</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1731467285020</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial Push">
-      <option name="closed" value="true" />
-      <created>1731467338746</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1731467338746</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Updated README.md">
-      <option name="closed" value="true" />
-      <created>1731467536907</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1731467536907</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Install Necessary Modules">
-      <option name="closed" value="true" />
-      <created>1731468570226</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1731468570226</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add Spotify OAuth 2.0 Flow Routes">
-      <option name="closed" value="true" />
-      <created>1731468597687</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1731468597687</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Cleaned up Next App">
-      <option name="closed" value="true" />
-      <created>1731475866047</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1731475866047</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Restarting...">
-      <option name="closed" value="true" />
-      <created>1731476512345</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1731476512345</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Create Next App">
-      <option name="closed" value="true" />
-      <created>1731476636303</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1731476636303</updated>
+      <workItem from="1731650585758" duration="17088000" />
+      <workItem from="1731953065709" duration="5164000" />
+      <workItem from="1732952093061" duration="15704000" />
+      <workItem from="1733026887935" duration="4663000" />
+      <workItem from="1733110739124" duration="8194000" />
     </task>
     <task id="LOCAL-00009" summary="Update README.md">
       <option name="closed" value="true" />
@@ -323,35 +269,286 @@
       <option name="project" value="LOCAL" />
       <updated>1731744963279</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update README.md">
+      <option name="closed" value="true" />
+      <created>1731745343599</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1731745343599</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Formatted Code">
+      <option name="closed" value="true" />
+      <created>1731953927661</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1731953927661</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Moved To Proper Folder">
+      <option name="closed" value="true" />
+      <created>1731953949700</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1731953949700</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fixed Issue with Not Displaying">
+      <option name="closed" value="true" />
+      <created>1731953966541</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1731953966541</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added Spotify Logo">
+      <option name="closed" value="true" />
+      <created>1731953988126</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1731953988126</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Fixed Styling">
+      <option name="closed" value="true" />
+      <created>1731953998587</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1731953998587</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Fixed Key Issue">
+      <option name="closed" value="true" />
+      <created>1731954011311</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1731954011311</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Made NavBar a Component">
+      <option name="closed" value="true" />
+      <created>1731962352850</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1731962352850</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added Navbar to Pages">
+      <option name="closed" value="true" />
+      <created>1731962367031</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731962367031</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Fixed Key Issue">
+      <option name="closed" value="true" />
+      <created>1731962376863</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731962376863</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Cleaned Thrown Errors">
+      <option name="closed" value="true" />
+      <created>1731962634753</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1731962634753</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Adjusted NavBar">
+      <option name="closed" value="true" />
+      <created>1732953527264</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1732953527264</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Basic Artist Information">
+      <option name="closed" value="true" />
+      <created>1732954752620</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1732954752620</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Added Helper">
+      <option name="closed" value="true" />
+      <created>1733000347707</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1733000347707</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Configured Artist View">
+      <option name="closed" value="true" />
+      <created>1733000360776</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1733000360776</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Get Artist's Albums">
+      <option name="closed" value="true" />
+      <created>1733000483949</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1733000483949</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Added Helper Function">
+      <option name="closed" value="true" />
+      <created>1733002646618</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1733002646618</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Styled Artist's Albums">
+      <option name="closed" value="true" />
+      <created>1733002660077</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1733002660077</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Added Helper">
+      <option name="closed" value="true" />
+      <created>1733009388771</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1733009388771</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Installed React Icons">
+      <option name="closed" value="true" />
+      <created>1733009398136</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1733009398136</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Fetch Album Data">
+      <option name="closed" value="true" />
+      <created>1733009408286</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1733009408286</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Added Detailed Album View">
+      <option name="closed" value="true" />
+      <created>1733009420421</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1733009420421</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Linked to Album View">
+      <option name="closed" value="true" />
+      <created>1733009428005</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1733009428005</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Added More Information to Album View">
+      <option name="closed" value="true" />
+      <created>1733010477551</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1733010477551</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Bolded Headings">
+      <option name="closed" value="true" />
+      <created>1733010499187</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1733010499187</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Adjusted Styling">
+      <option name="closed" value="true" />
+      <created>1733119499179</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1733119499179</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Added Track Detail View">
+      <option name="closed" value="true" />
+      <created>1733119529109</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1733119529109</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Changed Port back to 3000">
+      <option name="closed" value="true" />
+      <created>1733119540234</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1733119540234</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Linked Track View">
+      <option name="closed" value="true" />
+      <created>1733119553926</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1733119553926</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Linked Track View">
+      <option name="closed" value="true" />
+      <created>1733156211729</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1733156211729</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Display User's Name">
+      <option name="closed" value="true" />
+      <created>1733156956964</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1733156956964</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Push" />
-    <MESSAGE value="Updated README.md" />
-    <MESSAGE value="Install Necessary Modules" />
-    <MESSAGE value="Add Spotify OAuth 2.0 Flow Routes" />
-    <MESSAGE value="Cleaned up Next App" />
-    <MESSAGE value="Restarting..." />
-    <MESSAGE value="Create Next App" />
-    <MESSAGE value="Update README.md" />
-    <MESSAGE value="Clean Next App" />
-    <MESSAGE value="Authentication" />
-    <MESSAGE value="Login Page" />
-    <MESSAGE value="Adjusted Config" />
-    <MESSAGE value="Installed Dependencies" />
-    <MESSAGE value="Setup Spotify Context" />
-    <MESSAGE value="Fetch and Display Spotify Data" />
-    <MESSAGE value="Added Comments" />
-    <MESSAGE value="Added Images and Styling" />
-    <MESSAGE value="Added Limit Parameter" />
-    <MESSAGE value="Added Web Font" />
-    <MESSAGE value="Broke Into Components" />
-    <MESSAGE value="Limited to 5" />
-    <MESSAGE value="Temp Styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Temp Styling" />
+    <MESSAGE value="Fixed Issue with Not Displaying" />
+    <MESSAGE value="Added Spotify Logo" />
+    <MESSAGE value="Fixed Styling" />
+    <MESSAGE value="Made NavBar a Component" />
+    <MESSAGE value="Added Navbar to Pages" />
+    <MESSAGE value="Fixed Key Issue" />
+    <MESSAGE value="Cleaned Thrown Errors" />
+    <MESSAGE value="Adjusted NavBar" />
+    <MESSAGE value="Basic Artist Information" />
+    <MESSAGE value="Configured Artist View" />
+    <MESSAGE value="Get Artist's Albums" />
+    <MESSAGE value="Added Helper Function" />
+    <MESSAGE value="Styled Artist's Albums" />
+    <MESSAGE value="Added Helper" />
+    <MESSAGE value="Installed React Icons" />
+    <MESSAGE value="Fetch Album Data" />
+    <MESSAGE value="Added Detailed Album View" />
+    <MESSAGE value="Linked to Album View" />
+    <MESSAGE value="Added More Information to Album View" />
+    <MESSAGE value="Bolded Headings" />
+    <MESSAGE value="Adjusted Styling" />
+    <MESSAGE value="Added Track Detail View" />
+    <MESSAGE value="Changed Port back to 3000" />
+    <MESSAGE value="Linked Track View" />
+    <MESSAGE value="Display User's Name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display User's Name" />
   </component>
 </project>
