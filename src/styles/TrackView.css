@@ -24,6 +24,18 @@
 .track-information-container h1 {
     font-size: 5rem;
     margin: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.track-explicit-header {
+    font-size: 2rem;
+    padding: 0.2rem;
+    background-color: gray;
+    color: #121212;
+    border-radius: 0.2rem;
+    font-weight: bold;
 }
 
 .track-artist, .track-album {

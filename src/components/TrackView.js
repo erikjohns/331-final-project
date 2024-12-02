@@ -21,7 +21,7 @@ export default function TrackView({ track, lastPlayed }) {
 
                     <div className={'track-information-container'}>
                         <h1>{track.name} {track.explicit && (
-                            <span className={'track-explicit'}>E</span>
+                            <span className={'track-explicit-header'}>E</span>
                         )}</h1>
                         <div className={'track-album-artist-container'}>
                             <Link href={`/artist/${track.artists[0]?.id}`}>
