@@ -110,3 +110,15 @@ export const getTrackDetails = async (trackId) => {
     }
 }
 
+/**
+ * Fetch the current user's profile information from Spotify
+ * @returns {Object} - An object containing the user's profile information, including display name, or null if an error occurs
+ */
+export const getUserProfile = async () => {
+    try {
+        return await spotifyApi.getMe();
+    } catch (error) {
+        console.error("Error fetching user profile:", error);
+        return null;
+    }
+};

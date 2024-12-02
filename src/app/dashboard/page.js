@@ -12,6 +12,7 @@ import RecentTracksDashboard from '@/components/RecentTracksDashboard';
 import NavBar from "@/components/NavBar";
 import TopGenresDashboard from "@/components/TopGenresDashboard";
 import TopAlbumsDashboard from "@/components/TopAlbumsDashboard";
+import WelcomeUser from "@/components/WelcomeUser";
 
 export default function Dashboard() {
     const searchParams = useSearchParams();
@@ -33,6 +34,7 @@ export default function Dashboard() {
             <NavBar />
 
             {/* Dashboard Content */}
+            <WelcomeUser />
             <TopArtistsDashboard artists={topArtists} />
             <div className={'two-columns-dashboard'}>
                 <TracksDashboard id="top-tracks" tracks={topTracks} />

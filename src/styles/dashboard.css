@@ -4,7 +4,7 @@
 }
 
 .top-artists-dashboard-container {
-    margin: 5rem auto 0 auto;
+    margin: 1rem auto 0 auto;
     width: 80%;
     padding: 1rem;
     border-radius: 32px;
@@ -250,4 +250,9 @@
     text-decoration-color: currentColor;
 }
 
+.welcome-user-container {
+    width: 80%;
+    margin: 6rem auto 2rem auto;
+    color: #ffffff;
+}
 
