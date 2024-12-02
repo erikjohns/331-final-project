@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RecentTracksDashboard({ tracks }) {
     if (!tracks || !tracks.length || tracks.length === 0) return null;
 
@@ -8,21 +10,26 @@ export default function RecentTracksDashboard({ tracks }) {
             <div className={'track-list-container'}>
                 <ul className={'track-list'}>
                     {tracks.map((track, index) => (
-                        <li key={index}>
-                            <div className={'track'}>
-                                <h1>{index + 1}</h1>
-                                {track.track.album.images.length > 0 && (
-                                    <img
-                                        src={track.track.album.images[0]?.url}
-                                        alt={track.name}
-                                        className={index === 0 ? 'first-track-image' : 'track-image'}/>
-                                )}
-                                <div className={'track-info'}>
-                                    <h1>{track.track.name}</h1>
-                                    <p>{track.track.artists[0]?.name}</p>
+                        <Link href={{
+                            pathname: `/track/${track.track.id}`,
+                            query: { lastPlayed: track.played_at },
+                        }} key={index} >
+                            <li key={index}>
+                                <div className={'track'}>
+                                    <h1>{index + 1}</h1>
+                                    {track.track.album.images.length > 0 && (
+                                        <img
+                                            src={track.track.album.images[0]?.url}
+                                            alt={track.name}
+                                            className={index === 0 ? 'first-track-image' : 'track-image'}/>
+                                    )}
+                                    <div className={'track-info'}>
+                                        <h1>{track.track.name}</h1>
+                                        <p>{track.track.artists[0]?.name}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
+                        </Link>
                     ))}
                 </ul>
             </div>
